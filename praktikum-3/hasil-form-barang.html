@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Form Pemesanan Barang</title>
+</head>
+
+<body style=" margin: 0px;font-family:Arial, Helvetica, sans-serif; background-color: #ffffff;">
+    <nav style=" padding: 20px 65px; background-color: #f82249; color: white; align-items: center;">
+        <b>
+            <a href="form-pemesanan-barang.html"
+                style="color: white; text-decoration: none; margin-right: 40px;">HOME</a>
+            <a href="" style="color: white; text-decoration: none; margin-right: 40px;">REGISTER</a>
+            <a href="" style="color: white; text-decoration: none; margin-right: 40px;">POLICY</a>
+            <a href="" style="color: white; text-decoration: none; margin-right: 750px;">ABOUT</a>
+            <a href="" style="color: white; text-decoration: none;">LOGOUT</a>
+        </b>
+    </nav>
+    <div
+        style="font-family: cursive; border: 2px solid darkgray; border-radius: 10px; width: 800px; background-color: #F6F7FF; align-items: center; margin-left: 270px; margin-top: 40px;">
+        <div style="margin-left: 10px;">
+            <table>
+                <tr>
+                    <td>
+                        <img src="gambar/macbookjpg.jpg" alt="" height="200" width="200"
+                            style="border: 2px solid lightgray;border-radius: 4px;padding: 5px; margin-left: 50px; margin-top: 40px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="file" style="margin-left:70px;">
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div style="margin-top: -260px; margin-left: 300px;">
+            <form action="payment.html">
+                <table>
+                    <tr>
+                        <td><label for="nama">Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" id="nama" style="width: 300px;" value="Macbook Air $800"
+                                disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="desription">Description</label></td>
+                        <td>:</td>
+                        <td><textarea name="desription" id="desription" cols="21" rows="5" style="width: 300px;"
+                                disabled>Year : 2009                     
+                                     Model :                    
+                                     Condition : Mint</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="amount">Total Amount</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="amount" id="amount" style="width: 300px;" value="$800" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="payto">Pay To</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="payto" id="payto" style="width: 300px;" value="123-456-789-0"
+                                disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="bank">Payment Type</label></td>
+                        <td>:</td>
+                        <td>
+                            <select name="bank" id="bank" style="width: 308px;">
+                                <option value="visa">Visa Debit</option>
+                                <option value="bca">BCA</option>
+                                <option value="bri">BRI</option>
+                                <option value="cimb">CIMB</option>
+                                <option value="mandiri">Mandiri</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="accountholder">Account Holder</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="accountholder" id="accountholder" style="width: 300px;"
+                                value="Anggoro Seto"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="accountnumber">Account no.</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="accountnumber" id="accountnumber" style="width: 300px;"
+                                value="123-456-789-0"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td style="font-size: 10pt;">* if the transaction is for 3 person, choose 3 from drop-down list
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>
+                            <div style="color: green;"><input type="checkbox" checked>Send to Mobile Phone</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>
+                            <div style="color: green;"><input type="checkbox" checked>Send to Email</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="telephone">Send to Mobile Phone</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="telephone" name="telephone" style="width: 300px;"
+                                value="088210922583">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Send to Email</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="email" id="email" style="width: 300px;" value="anggoro@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" height="80"></td>
+                        <td>
+                            <button type="submit"
+                                style=" margin-left: 70px; background-color: green; color: white; cursor: pointer;padding: 8px 29px; border-radius: 5px; border: lightgreen;">
+                                <div style="font-family: cursive;">Pay Using QuidLink</div>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </div>
+</body>
+>
+
+</html>

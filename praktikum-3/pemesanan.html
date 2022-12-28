@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+<div style="margin-left: 27%; width: 540px;padding: 10px;border: 5px solid black; background-color: whitesmoke;">
+    <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+    <p>Our 12''wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an
+        hour.
+    </p>
+    <hr>
+    <form action="success.html" method="post">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Your Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="customername" id="customername" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="address" id="address" required></td>
+                </tr>
+                <tr>
+                    <td><label for="handphone">No. handphone</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="handphone" id="handphone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="description">Deliver Instruction</label></td>
+                    <td>:</td>
+                    <td><textarea name="description" id="description" cols="21" rows="3"
+                            placeholder="No more than 400 charactions long" required></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <fieldset>
+            <legend><b>Design Your Dream Pizza</b></legend>
+            <h4>Crust (Choose one):</h4>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="radio" id="white" name="Crust">
+                    <label for="white">Classic white</label>
+                </li>
+                <li>
+                    <input type="radio" id="multigrain" name="Crust">
+                    <label for="multigrain">Multigrain</label>
+                </li>
+                <li>
+                    <input type="radio" id="tuna" name="Crust">
+                    <label for="tuna">Tuna Melt</label>
+                </li>
+                <li>
+                    <input type="radio" id="galore" name="Crust">
+                    <label for="galore">Cheesy Galore</label>
+                </li>
+                <li>
+                    <input type="radio" id="meat" name="Crust">
+                    <label for="meat">Meat Lovers</label>
+                </li>
+            </ul>
+            <h4>Toppings (Choose as many as you want):</h4>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="checkbox" id="whitesauce" checked>
+                    <label for="whitesauce">White Sauce</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="mozarela">
+                    <label for="mozarela">Mozarella Cheese</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pepprerani">
+                    <label for="pepprerani">Pepprerani</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="peppers">
+                    <label for="peppers">Peppers</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="anchories">
+                    <label for="anchories">Anchories</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pineapple">
+                    <label for="pineapple">Pineapple</label>
+                </li>
+            </ul>
+            <h4>Number</h4>
+            <label for="count">How many Pizzas: </label>
+            <input type="number" id="count"><br><br>
+            <button type="reset"
+                style="background-color: red; color: white; cursor: pointer; padding: 5px 15px;">Reset</button>
+            <button type="submit"
+                style="background-color: green; color: white; cursor: pointer;padding: 5px 15px;">Bring me a
+                Pizza</button>
+        </fieldset>
+    </form>
+</div>
+
+<body>
+
+</body>
+
+</html>
