@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form name="contactForm" onsubmit="return false">
+        <h2>Form Pemesanan</h2>
+        <div class="row">
+            <label>Nama</label>
+            <div class="error" id="nameErr"></div>
+            <input type="text" name="name">
+        </div>
+        <div class="row">
+            <label>Email Address</label>
+            <div class="error" id="emailErr"></div>
+            <input type="text" name="email">
+        </div>
+        <div class="row">
+            <label>Jam Keberangkatan</label>
+            <div class="error" id="jamErr"></div>
+            <input type="time" name="jam">
+        </div>
+        <div class="row">
+            <label>Tujuan Keberangkatan</label>
+            <div class="error" id="tujuanErr"></div>
+            <input type="text" name="tujuanKeberangkatan">
+        </div>
+        <div class="row">
+            <label>Jumlah Tiket</label>
+            <div class="error" id="jumlahErr"></div>
+            <input type="number" name="jumlahTiket">
+        </div>
+        <div class="btn">
+            <input type="submit" value="Submit" onclick="validateForm()" class="btn btn-submit">
+            <input type="submit" onclick="reload()" value="Reset" class="btn btn-reset" />
+        </div>
+        <span style="color: rgb(15, 250, 15)">*catatan : hasil yang valid akan tampil pada form dibawah</span>
+    </form>
+
+    <div class="hasil-validasi">
+        <h1 id="hasil" style="text-decoration: underline; text-align: center;"></h1>
+        <table>
+            <tr>
+                <td>Nama Pelanggan</td>
+                <td>:</td>
+                <td><span id="hasilNama"></span></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><span id="hasilEmail"></span></td>
+            </tr>
+            <tr>
+                <td>Jam Keberangkatan</td>
+                <td>:</td>
+                <td><span id="hasilJam"></span></td>
+            </tr>
+            <tr>
+                <td>Tujuan Keberangkatan</td>
+                <td>:</td>
+                <td><span id="hasilTujuan"></span></td>
+            </tr>
+            <tr>
+                <td>Jumlah Tiket</td>
+                <td>:</td>
+                <td><span id="hasilTiket"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
