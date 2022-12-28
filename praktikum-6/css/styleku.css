@@ -1,0 +1,117 @@
+/* Element Selector */
+body {
+    margin: 0 !important;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    background-color: #F5F5DD;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+div>nav {
+    display: flex;
+    width: 100px;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div>nav>a {
+    margin-right: 5px;
+}
+
+
+/* ID Selector */
+#header {
+    margin-top: -22px;
+    background-color: #DEB887;
+    height: 155px;
+}
+
+#header>blockquote {
+    border-radius: 10px;
+    background-color: yellow;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 55%;
+    margin-left: 22.5%;
+    border: 1px dotted orange;
+}
+
+/* Class Selector*/
+
+.container {
+    margin-right: 1%;
+    margin-left: 1%;
+    text-align: justify;
+}
+
+.koleksi img {
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.gambar {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 50%;
+}
+
+.gambar>img {
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.hurufb {
+    font-weight: bold;
+    font-size: 50px;
+    color: blue;
+}
+
+.promo {
+    font-size: 15px;
+    color: red;
+    text-align: center;
+}
+
+.promo ol {
+    list-style: none;
+}
+
+.ecommerce {
+    background-color: yellow;
+    width: 30%;
+    height: 140px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px dotted red;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ecommerce>a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.ecommerce>h4 {
+    color: blue;
+}
+
+.ecommerce>a:hover {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: blue;
+}
